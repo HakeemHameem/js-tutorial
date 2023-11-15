@@ -13,7 +13,7 @@ console.log(newDate)
 console.log(newDate.toString)
 console.log(newDate)
 
-let DateAnother=new Date()
+// let DateAnother=new Date()
 
 
 console.log(DateAnother.toLocaleString('default',{
