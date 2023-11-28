@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <h1>Hi I'm Hameem </h1>
+
+        <button id="stop" type="submit" >Stop it</button>
+    </div>
+    
+</body>
+<script>
+    const Hameem=function(){
+        console.log("Hameem")
+    }
+    const ChangeText=function(){
+        document.querySelector('.container').innerHTML='best JS Series'
+    }
+   
+   const Change=setTimeout(Hameem,3000)                             //ye aik baar kisi bhi cheeez ko print krta hain after several time
+
+
+   const hamem=document.querySelector('#stop').addEventListener( 'click',  function(){
+          clearTimeout(Change)                                          // timeout ko print hone nai deta ye
+          console.log("STOPPED")
+   })
+
+</script>
+</html>

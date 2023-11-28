@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT PRACTICE</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:antiquewhite
+    }
+</style>
+<body>
+
+    <div class="container">
+        
+            <li>Home</li>
+            <li>CLass</li>
+            <li>About</li>
+            <li>More</li>
+        
+    </div>
+    
+</body>
+<script>
+    // function good(addlang){
+    //     const li=document.createElement('li')
+    //     const addText=document.createTextNode(addlang)
+    //     li.appendChild(addText)
+    //     document.querySelector('.container').appendChild(li)
+    // }
+    // good('Contact Us')
+
+    // const secondlang=document.querySelector('li:last-child')
+    // const li=document.createElement('li')
+    // li.textContent='pikoda'
+    // secondlang.replaceWith(li)
+    
+    // const thirdlang=document.querySelector('li:last-child')
+    // thirdlang.remove()
+
+    function bad(good){
+        const li=document.createElement('li')
+        const addText=document.createTextNode(good)
+        li.appendChild(addText)
+        document.querySelector('.container').appendChild(li)
+
+    }
+    bad('aur suna')
+
+    const li=document.querySelector("li:nth-child(2)")
+    const gi=document.createElement('gi')
+    gi.textContent='goad'
+    li.replaceWith(gi)
+</script>
+</html>

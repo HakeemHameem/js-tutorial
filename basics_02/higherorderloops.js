@@ -72,7 +72,7 @@ for (const key in object1) {
    let threeparameters=["ham","ram","dam"]
 
    threeparameters.forEach(function (item,index,array){         // actually parameters of foreach has three parameters i.e item,index and array
-    console.log(item,index,array)
+    // console.log(item,index,array)
    })
 
   /// accessing array of objects using forEach
@@ -93,5 +93,8 @@ for (const key in object1) {
   ]
 
   loopy.forEach((item)=>{
-    console.log(item.id)
+    // console.log(item.id)
   })
+
+
+  

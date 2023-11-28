@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and remove Element</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:white
+    }
+</style>
+<body>
+    <div class="container">
+        <div><li>one</li></div>
+    </div>
+    
+</body>
+<script>
+
+    //adding elements
+    function addLang(langnew){
+        const li=document.createElement('li')
+        li.innerHTML=`${langnew}`                                          // way of adding new elements using javascript but it is not an optimized approach isme hame poora ka poora tree traverse karna padh raha hai
+        document.querySelector('.container').appendChild(li)
+
+    }
+    addLang("python")
+    addLang("javascript")
+
+    //optimized approach
+
+    function addoptilang(newlang){
+        const li=document.createElement('li')
+        const addText=document.createTextNode(newlang)
+        li.appendChild(addText)
+        document.querySelector('.container').appendChild(li)
+
+
+    }
+    addoptilang("golang")
+
+    //edit element
+    const secondlang=document.querySelector("li:nth-child(2)")
+    const li=document.createElement('li')
+    li.textContent="pakoda"
+    secondlang.replaceWith(li)
+
+
+    //removing element
+
+    const laast=document.querySelector('li:last-child')
+    laast.remove()
+
+
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div class="contai">
+        <ul>
+            <li id="owl" <img width="200px" src="https://www.pexels.com/photo/wooden-barn-beside-brown-grass-field-12982035/" alt="">Box1</li>
+            <li img="">Box2</li>
+            <li>Box3</li>
+            <li>Box4</li>
+        </ul>
+
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     alert('box 1 has been clicked')
+        
+    // },false)                                                          // bubbling up hota hai jis event par shuru hoga wahi sai start hoga code
+    //                                                                  // agar abh false ki jagah true hota tou capturing hota tou phir code pehle uper sai start hota
+    
+    
+// question--> click on a item and it should get removed
+
+    // document.querySelector('.contai').addEventListener('click',function(e){
+    //     console.log(e.target)
+    //     let Deltet=e.target
+    //     Deltet.remove()
+  // },false)
+
+  // after adding images to box1 box2 and box3
+     document.querySelector('.contai').addEventListener('click',function(e){
+         console.log(e.target.tagName)
+         if(e.target.tagName==='IMG'){                      //ye remove nahie karay ga jab tak images nahie hongi
+          
+             let Deltet=e.target.parentNode
+             Deltet.remove()
+         }
+   },false)
+
+  
+</script>
+</html>

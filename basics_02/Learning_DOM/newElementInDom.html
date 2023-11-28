@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM new element</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="con">MONDAY </div> 
+            <div class="con">TUESDAY </div> 
+            <div class="con">WEDNESDAY</div> 
+            <div class="con">THURSDAY </div> 
+            
+    
+    </div>
+
+    
+</body>
+<script>
+    // const hame=document.querySelector('container')
+    // // console.log(hame)
+    // // console.log(hame.children)
+    // // console.log(hame.children[1].innerHTML)
+    // for (let index = 0; index < parent.children.length; index++) {
+    //        console.log(parent.children[i].innerHTML)
+        
+    // }
+    // const div=document.createElement('div')
+    // console.log(div)
+    // div.className="main"
+    // div.id="41"
+    // div.setAttribute("title","generated-title")
+    // div.style.backgroundColor="green"
+    // // div.innerText='chai aur code'
+    // const addText=document.createTextNode('chai aur code')             //adding new element in the DOM
+    // div.appendChild(addText)
+
+    // document.body.appendChild(div)
+
+   
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id="41"
+    div.setAttribute("title","newEleemt")
+    div.style.backgroundColor="green"
+    const addText=document.createTextNode('chai aur code')
+    div.appendChild(addText)
+
+    document.body.apppendChild(div)
+
+
+
+
+</script>
+</html>
