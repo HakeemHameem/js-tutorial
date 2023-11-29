@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Request</title>
+</head>
+<body>
+    <div class="contai">
+        <h1>I'm Good abhi idhar hai hain tou idhr ke ham baap loug</h1>
+    </div>
+</body>
+<script>
+    const urlreq='https://randomuser.me/api/'
+    const xlr=new XMLHttpRequest()
+    xlr.open('GET',urlreq)
+
+    xlr.onreadystatechange=function(){
+    console.log(xlr.readyState)
+    if(xlr.readyState===4){
+        const response=JSON.parse(this.responseText)
+        console.log(response)
+        console.log( typeof response)
+        console.log(response.seed)
+    }
+
+    }
+    xlr.send()
+</script>

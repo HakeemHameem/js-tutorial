@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiReq</title>
+</head>
+<body>
+    <div class="contai">
+        <h1>hi im good</h1>
+    </div>
+    
+</body>
+<script>
+    const expression='https://randomuser.me/api/'
+    const xlru=new XMLHttpRequest()
+    xlru.open('GET',expression)
+    // console.log("Here")
+    xlru.onreadystatechange=function(){
+
+        console.log(xlru.readyState)
+
+        if(xlru.readyState===4){
+            const responses=JSON.parse(this.responseText)
+            console.log(responses)
+            console.log(responses.seed)    // anything we can take from the users information as we have converted it into the object
+        }
+    }
+    
+    xlru.send()
+</script>
+</html>
